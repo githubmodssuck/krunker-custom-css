@@ -3,20 +3,20 @@
 /* Customize */
 :root {
     /*LeaderBoard*/
-    --color1: #fff;
+    --color1: #383636;
     /*Weapon Shadows*/
-    --color2: aqua;
+    --color2: black;
     /*Why i add this...?*/
     --color3: black;
     /*timer color*/
-    --time  : #8194ff;
+    --time  : #ff2b2b;
     /*ammo color*/
-    --ammoC : #fff;
+    --ammoC : #ff0000;
     /*Health color*/
     --hpC   : #fff;
     /*reload bar color*/
-    --relc1 : #95ff4b;
-    --relc2 : #53f0ff;
+    --relc1 : #ff1414;
+    --relc2 : #000000;
     /*[R]Reloading color*/
-    --relmsg: pink;
+    --relmsg: red;
 }
