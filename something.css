@@ -2,7 +2,7 @@
     /*LeaderBoard*/
     --color1: #383636;
     /*Weapon Shadows*/
-    --color2: Black;
+    --color2: black;
     /*Why i add this...?*/
     --color3: black;
     /*timer color*/
@@ -15,7 +15,7 @@
     --relc1 : #ff1414;
     --relc2 : #000000;
     /*[R]Reloading color*/
-    --relmsg: pink;
+    --relmsg: red;
 }
 
 @font-face {
