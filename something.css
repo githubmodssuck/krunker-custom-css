@@ -1,6 +1,6 @@
 :root {
     /*LeaderBoard*/
-    --color1: #fff;
+    --color1: #383636;
     /*Weapon Shadows*/
     --color2: aqua;
     /*Why i add this...?*/
@@ -8,12 +8,12 @@
     /*timer color*/
     --time  : #8194ff;
     /*ammo color*/
-    --ammoC : #fff;
+    --ammoC : #ff0000;
     /*Health color*/
     --hpC   : #fff;
     /*reload bar color*/
-    --relc1 : #95ff4b;
-    --relc2 : #53f0ff;
+    --relc1 : #ff1414;
+    --relc2 : #000000;
     /*[R]Reloading color*/
     --relmsg: pink;
 }
@@ -71,8 +71,8 @@ div#onetrust-consent-sdk,
 }
 
 #termsInfo:before {
-    content  : "CSS BY NamekujiLSDs#7777";
-    color    : yellow;
+    content  : "Css By Sltr_Loxo";
+    color    : Red;
     font-size: 18px;
 }
 
