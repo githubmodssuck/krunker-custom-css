@@ -217,7 +217,7 @@ div#streakCount {
     color    : var(--hpC);
     font-size: 60px;
     position : fixed;
-    left     : 41%;
+    left     : 40%;
     bottom   : 35%;
 }
 
