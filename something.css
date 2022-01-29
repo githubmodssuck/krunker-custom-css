@@ -18,6 +18,32 @@
     --relmsg: red;
 }
 
+/* Icon */
+
+.iconProfile {
+	background-image: url(https://media.discordapp.net/attachments/719789737833005108/762218862703804426/profile.png);
+}
+
+.iconShop {
+	background-image: url(https://media.discordapp.net/attachments/719789737833005108/762218990083768320/shop.png);
+}
+
+.iconChall {
+	background-image: url(https://media.discordapp.net/attachments/719789737833005108/762218855073579018/chall.png);
+}
+
+.iconGames {
+	background-image: url(https://media.discordapp.net/attachments/719789737833005108/762218857141239838/games.png);
+}
+
+.iconMods {
+	background-image: url(https://media.discordapp.net/attachments/719789737833005108/762218859490443284/mods.png);
+}
+
+.iconSettings {
+	background-image: url(https://media.discordapp.net/attachments/719789737833005108/762218865274781696/settings.png);
+}
+
 @font-face {
     font-family: gamefont;
     src        : url(https://fonts.gstatic.com/s/fredokaone/v8/k3kUo8kEI-tA1RRcTZGmTlHGCac.woff2);
