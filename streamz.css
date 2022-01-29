@@ -1,547 +1,573 @@
-/*FurrFurr*/
-/* same logic; if you do not know what you are doing you are new to css i reccommend you to ask me (FuryKA10#1432 on discord). 
-Ask me before importing the url for it (if it becomes that successful ofc lul) 
-and yeah i guess that is about it. Do not sell it, no plagiarism, or anything :).*/ 
-
-@import url(https://envykrunk.github.io/removal/removal.css);
+@import url(https://css.reizu.moe/uwu/uwu.css);
 
 :root {
-    --accent: #eb5656;
-    --accent2: #9eeb56;
+    --text-color: #ff0000;
+    --menu-bg-color: rgba(255, 255, 255, 1);
+    --menu-bg-color-secondary: rgba(230, 230, 230, 1);
+    --accent-color: #ff0000;
+    --health-color: #fff;
+    --ammo-color: #fff;
+    --premium-color: #ff0000;
+    --verified-color: #ff0000;
+    --ingame-bg-color: rgba(15, 15, 15, .2);
+    --text-transform: none;
 }
 
-/* stuff */
-
-.verticalSeparator,
-.youNewDiv,
-#streamContainer,
-#mainLogo,
-#seasonLabel,
-#menuMiniProfilePic,
-#loadEditrBtn,
-.rankClck,
-#endInfo {
-    display: none !important
+@font-face {
+    font-family: gamefont;
+    src: url(https://raw.githubusercontent.com/South-Paw/typeface-vag-rounded/master/files/vag-rounded-400.woff2);
 }
 
-/* thank u envy check out https://envykrunk.github.io/removal/removal.css 
-for removing certain stuff */
+@font-face {
+	font-family: hpammo;
+	src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2);
+}
+#loadingBg {
+  background-image:url(https://cdn.discordapp.com/attachments/801899442457280612/866509043996426240/Intro-HELLO-FUTURE-1920x1080_v2.gif);
+keeping this here
 
-#ammoIcon,
-#challIcon,
-#customizeButton .material-icons,
-#timerIcon,
-#chatSwitch,
-#curGameInfo,
-.weapKey,
-#killsIcon,
-#deathsIcon,
-#streakIcon,
-#kdIcon,
-.endTablePfp,
-.endTableFlag  {
-    display: none !important
+}
+#connectingBg {
+  background-image:url(https://cdn.discordapp.com/attachments/801899442457280612/866509043996426240/Intro-HELLO-FUTURE-1920x1080_v2.gif);
+keeping this here
+
 }
 
-#timerDisplay,
-#ammoDisplay,
-#healthValueHolder,
-#chatList,
-#chatInput,
-#chatInputHolder  {
-    border-radius: 0 !important
-}
-
-#ammoVal,
-#timerVal,
-#healthValue,
-#ammoMax, 
-#leaderDisplay,
-.countIcon,
-#signedInHeaderBar,
-#reloadMsg::after {
-    text-shadow: 0 0 5px #000000b8
-}
-
-#timerDisplay,
-#ammoDisplay,
-#leaderDisplay {
-    background-color: transparent
-}
-
-#killsVal,
-#deathsVal,
-#streakVal,
-#myScoreVal,
-#kdVal {
-    color: white !important;
-}
-
-/* chat stuff */
-
-#chatInput {
-    background-color: transparent;
-    border: none;
-    font-size: 21px;
-}
-
-#chatInputHolder {
-    margin-top: 0;
-    border: none;
-    border-top: 1px solid black;
-    background-color: #0000009e
-}
-
-#chatInputHolder, #chatInput {
-    text-align: center   
-}
-
-#uiBase.onMenu #chatHolder {
-    bottom: 30px !important;
-    position: fixed
-}
-
-#chatHolder {
-    position: fixed;
-    bottom: 110px !important 
-}
-
-/* health stuff */
-
-#healthValueHolder {
-    background-color: transparent;
-    position: absolute;
-    left: 27px;
-    bottom: -40px;
-    width: 300px
-}
-
-#healthValue {
-    font-size: 55px;
-}
-
-#maxHP {
-    font-size: 40px
-}
-
-.hpBSeg {
-    border-radius: 0 !important;
-    box-shadow: none;
-}
-
-.healthBarSeg {
-    margin-right: -0.8px;
-    border-radius: 0 !important;
-    width: 65px;
-    height: 40px
-}
-
-#healthBar {
-    border-radius: 0 !important;
+#policeButton {
     display: none;
-    background-color: transparent;
-    transform: translateX(-50%);
-    left: 50%;
-    position: fixed;
-    bottom: 1%
 }
 
-#hudClassIcon {
-    position: fixed;
-    right: 2%;
-    bottom: 2%;
-    background-color: transparent;
-    transform: scale(1.2)
-}
-
-/* colour thing */
-
-/*leaderName, .tScoreF{
-    color: var(--accent) 
-}
-[style*="color:#eb5656"] {
-    color: var(--accent) !important
-}
-[style*="color:#9eeb56"] {
-    color: var(--accent2) !important
-}
-[style*="color:#d0d0d0"] {
-     color: var(--accent2)
-} 
-.leaderNameF, .tScoreF.you {
-    color: var(--accent2) !important 
-}
-*/
-
-.tScoreC {
-    background-color: var(--accent) 
-}
-
-.tScoreC.you {
-    background-color: var(--accent2) 
-}
-
-.leaderName, .leaderNameF {
-    text-shadow: none !important
-}
-
-/* ammo stuff */
-
-#ammoDisplay {
-   position: fixed;
-   right: 11%;
-   padding-top: 0;
-   padding-bottom: 39px;
-   bottom: 3.4%;
-   background: linear-gradient(90deg,grey, grey);
-   background-repeat: no-repeat
-}
-
-#ammoVal {
-    font-size: 60px
-}
-
-#ammoMax {
-    font-size: 45px
-}
-
-/* reload message stuff */
-
-#reloadMsg {
-    background-color: transparent;
-    border: none;
-    visibility: hidden 
-}
-
-#reloadMsg::after {
-    visibility: visible;
-    content: 'warning_amber';
-    font-size: 90px;
-    font-family: 'Material-Icons';
-    display: block !important;
-    margin-bottom: 17% !important
-}
-
-/* weapon icon thing */
-
-#weapDisplay {
-    bottom: 14%;
-    transform: scale(1.2);
-    right: 2%
-}
-
-/* timer stuff */
-
-#timerVal {
-    font-size: 40px
-}
-
-#timerDisplay {
-    border-radius: 0 !important;
-    background-color: transparent;
-    left: 50%;
-    transform: translateX(-50%);
-    position: fixed;
-    top: -0.3%
-}
-
-/* count icon stuff */
-
-.countIcon {
-    background-color: transparent;
-    font-size: 24px;
+#policeButton {
+    display: inline!important;
 }
 
 .topRightCounters {
-    flex-direction: column !important;
-    display: flex;
+	position: unset;
+	bottom: unset;
+	right: unset;
 }
 
-#killsVal:before {
-    content: 'K';
-    margin-right: 20px !important
+.countIcon {
+	padding: 10px;
 }
 
-#streakVal:before {
-    content: 'S';
-    margin-right: 20px !important
+#aHolder,#onetrust-consent-sdk {
+    display:none !important;
+}
+#hiddenClasses {
+    display: flex !important;
+    flex-direction:row;
+    position:fixed;
+    left:50%;
+    bottom:10%;
+    transform: translate(-50%,-50%);
+    margin-right: 10px;
+}
+#menuClassPicker0[onclick="selectClass(0)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_0.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker0[onclick="selectClass(0)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker1[onclick="selectClass(1)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_1.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker1[onclick="selectClass(1)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker2[onclick="selectClass(2)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_2.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker2[onclick="selectClass(2)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker3[onclick="selectClass(3)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_3.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker3[onclick="selectClass(3)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker4[onclick="selectClass(4)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_4.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker4[onclick="selectClass(4)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker5[onclick="selectClass(5)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_5.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker5[onclick="selectClass(5)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker6[onclick="selectClass(6)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_6.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker6[onclick="selectClass(6)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker7[onclick="selectClass(7)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_7.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker7[onclick="selectClass(7)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker8[onclick="selectClass(8)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_8.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker8[onclick="selectClass(8)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker9[onclick="selectClass(9)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_9.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker9[onclick="selectClass(9)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker10[onclick="selectClass(10)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_10.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker10[onclick="selectClass(10)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker11[onclick="selectClass(11)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_11.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker11[onclick="selectClass(11)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker12[onclick="selectClass(12)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_12.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker12[onclick="selectClass(12)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker13[onclick="selectClass(13)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_13.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker13[onclick="selectClass(13)"]:hover {
+    cursor:pointer;
+}
+#menuClassPicker14[onclick="selectClass(14)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_14.png?build=uLz7w);    
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+#menuClassPicker14[onclick="selectClass(14)"]:hover {
+    cursor:pointer;
 }
 
-#deathsVal:before {
-    content: 'D';
-    margin-right: 20px !important
+#challIcon {
+    display: inline-block !important;
+	position: fixed;
+    width: 35px;
+	height: 35px;
+	left: 41%;
+	bottom: 45px;
+	filter: brightness(0) invert(1) drop-shadow(2px 2px 3px rgba(30, 30, 30, .5));
 }
 
-#kdVal:before {
-    content: 'K/D';
-    margin-right: 20px !important
+#ammoIcon {
+    display: inline-block !important;
+	position: fixed;
+    width: 35px;
+	height: 35px;
+	right: 41%;
+	bottom: 42px;
+    margin-right: 0;
+	margin-left: 0;
+	filter: brightness(0) invert(1) drop-shadow(2px 2px 3px rgba(30, 30, 30, .5));
 }
 
-/* team scores stuff */
+#healthValue {
+	text-align: right;
+	position: fixed;
+	width: 200px;
+	left: 28%;
+	bottom: 25px;
+	font-size: 96px;
+}
+
+#ammoDisplay {
+	width: 50px;
+	height: 4px;
+	top: calc(50% + 35px);
+	left: calc(50% - 25px);
+	background-image: url(https://dummyimage.com/1x1/ffffff/ffffff.png);
+}
+
+#ammoVal {
+    text-align: left;
+    width: 200px;
+    position: fixed;
+    font-size: 96px;
+    right: 27.5%;
+    bottom: 25px;
+}
+
+#weapDisplay {
+	display: none !important;
+}
+
+#reloadMsg {
+	bottom: 150px;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#timerDisplay {
+	width: 200px;
+	height: 80px;
+	background-color: transparent;
+	will-change: unset;
+}
+
+#timerVal {
+	font-size: 64px;
+	padding-left: 0;
+	will-change: unset;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
 
 #teamScores {
-    position: fixed;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    height: 0px !important;
-    padding-left: 0;
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-    margin-left: 0;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    flex-direction: row-reverse !important;
-    display: flex !important;
-    border-radius: 0;
-    background-color: transparent;
-}
-
-.tScoreC, .tScoreF {
-    left: 50% !important;
-    width: 115px;
-    height: 80px;
-    background-color: var(--accent);
-    opacity: 50%;
-    margin: 0px !important;
-    padding: 0px !important;
-    z-index: 1;
-}
-
-.tScoreC.you, .tScoreF.you {
-    background-color: var(--accent2);
-    opacity: 50%;
-    z-index: 1
+	position: fixed;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 685px;
+	height: 50px;
+	padding: 10px;
+	padding-left: 0;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	margin-left: 0;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	border-radius: 0;
+	background-color: transparent;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 }
 
 .tScore {
-    display: inline-block;
-    margin-left: 95px;
-    margin-right: 95px
+	display: inline-block;
 }
 
 #tScoreV1 {
-    position: fixed;
-    color: white;
-    right: 1%;
-    top: 0px;
+	position: fixed;
+	left: -25%;
+	top: 4px;
 }
 
 #tScoreV2 {
-    position: fixed;
-    left: 1%;
-    color: white;
-    top: 0px;
+	position: fixed;
+	left: 25%;
+	top: 4px;
 }
 
 .tScoreT {
-    width: 300px;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 30px;
-    text-shadow: 0 0 5px #000000b8;
-    color: white;
-    z-index: 2;
+	width: 100%;
+	margin-top: 12px;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+	z-index: 2;
 }
 
 .tScoreM {
-    display: none;
+	display: none;
+}
+
+.tScoreF {
+	left: 50%;
+	width: 90px;
+	height: 60px;
+	margin-left: 125px;
+	margin-right: 125px;
+	padding-left: 0;
+	padding-right: 0;
+	background-color: #eb5656;
+	color: transparent;
+	opacity: 50%;
+	z-index: 1;
+}
+
+.tScoreF.you {
+	background-color: #5699eb;
+	color: transparent;
+	opacity: 50%;
+	z-index: 1;
+}
+
+.tScoreC {
+	left: 50%;
+	width: 90px;
+	height: 60px;
+	margin-left: 125px;
+	margin-right: 125px;
+	background-color: var(--accent-color);
+	opacity: 50%;
+	z-index: 1;
+}
+
+.tScoreC.you {
+	background-color: #fff;
+	opacity: 50%;
+	z-index: 1;
 }
 
 #gameMessage {
-    top: 85px;
-    text-shadow: 0 0 5px #0000009e
-}
-                  /* MENU UI */
-
-/* level bar stuff */
-
-.headerBarLeft {
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 0 !important;
-    top: 2%;
-    padding: 5px;
-    margin: 0;
-    width: 300px;
-    height: 60px;
-    background-color: transparent
+	top: 80px;
+	font-size: 18px;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 }
 
-#signedInHeaderBar {
-    border-radius: 0 !important;
-    text-align: center;
-    padding-right: 10px !important;
-    padding-left: 10px;
-    font-size: 20px
+#ingameFPS {
+	color: #fff !important;
+	visibility: visible;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 }
 
-#mLevelCont {
-    border-radius: 0;
-    padding: 0;
-    margin: 0;
-    width: 70px;
-    top: -21%;
-    position: fixed;
-    left: -80px;
-    background-color: transparent
+#ingameFPS::after {
+    content: ' fps';
+    text-transform: var(--text-transform);
 }
 
-#mLevelCont::before {
-    content: 'level';
+#pingText {
+	color: #fff !important;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 }
 
-/* side menu bar stuff */
-
-#menuItemContainer {
-    height: 99.8%;
-    top: 0.2px;
-    background-color: #00000047
+#pingText::after {
+    content: ' ms';
 }
 
-.menuItem:hover .menBtnIcn {
-    transform: none !important
+#pingIcon {
+	display: none;
 }
 
-
-/* class preview stuff */
-
-#menuClassContainer {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 79%
+#pingDisplay .material-icons {
+	font-size: 20px;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 }
 
-#customizeButton {
-    position: fixed;
-    height: 330px;
-    bottom: -140px;
-    right: 430px;
-    opacity: 0; 
+.standout {
+	visibility: shown
 }
 
-#menuClassNameTag {
-    top: 240px
+.standout::before {
+	display: none
 }
 
-/* kpd button stuff */
-
-#policeButton {
-    position: fixed;
-    top: -906.5px;
-    right: -14.5%;
-    height: 62px !important;
-    border-radius: 0;
+.standout::after {
+	display: none
 }
 
-#policeButton:hover {
-    transform: none
+/* Weapon Display, Epic One */
+
+#weapDisplay[style*="block"] {
+	display: block!important
 }
 
-[src="./img/police.png"] {
-    transform: translateY(-5%) !important
+#weapDisplay {
+    bottom: 15px;
+    right: 50%;
+    transform: translateX(50%)
 }
 
-/* sub logo buttons stuff */
+.weapItem {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
 
-#subLogoButtons {
-    flex-direction: column;
+.weapIcon {
+	opacity: 0!Important;	
+	transition-delay: 0.3s ease-in-out
+}
+
+.weapIcon[style*="1"] {
+	opacity: 1!important;
+}
+
+#weapIconMel {
+    margin: 0 !important;
+    margin-bottom: -15px!important;
+}
+
+.weapKey {
+    display: none;
+}
+
+/* Move Bottom Right Counter To Normal */
+
+.topRightCounters {
+	position: static;
+	bottom: auto;
+	right: auto;
+	width: 390px!important
+}
+
+/* Misc */
+
+.krIconHost {
+	margin-top: -16px
+}
+
+/* Check Point */
+
+#scoreZoneCount {
+	color: white !important;
+    bottom: 7px;
+    font-size: 36px;
     display: flex;
-    left: 95.5%;
-    vertical-align: middle !important;
-    padding: 0 !important;
-    top: -7px;
-    margin: 0 !important;
+    justify-content: center;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 }
 
-.button.small {
-    padding: 10px !important;
-    margin: 0 !important;
-    margin-top: -0.35px !important;
-    height: 200px !important;
-    width: 160px;
-    padding-top: 100px !important;
-    padding-bottom: 90px !important;
-    border-radius: 0 !important;
-    border: none !important;
-    background-color: #00000047;
-}
-
-#menuBtnJoin {
-    border: none !important
-}
-
-.button.small:hover {
-    transform: none;
-    text-shadow: 0 0 5px black
-}
-
-/* other stuff */
-
-.headerBarRight {
+#scoreZoneCount::after {
+	display: block;
     position: fixed;
-    left: 75%;
-    width: 100px;
-    border-radius: 0;
-    font-size: 20px;
+    margin-top: 1px;
+    margin-left: 3px;
+    font-size: 14px;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
 }
 
-#termsInfo {
-    position: fixed;
-    top: 0;
-    left: 150px
+#scoreZoneCount::after {
+	content: " Point"
 }
 
-#mapInfo {
-    position: fixed;
-    top: 90px;
-    left: 160px
+#scoreZoneCount > i {
+    display: none!important
 }
 
-#modVote {
-    margin-right: 200px !important
+/* Host */
+
+.hostMapYear, .hostMapVersion {
+    display: none
 }
 
-/* spectate button stuff */
+.hostMapBy {
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 2px 0px #000000;
+}
 
-#spectButton .sliderSml::before {
-    content: 'visibility_off';
-    font-family: 'Material-Icons';
-    visibility: visible;
-    font-size: 70px;
-    position: fixed;
+.hostMapName {
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
     text-align: center;
-    color: white;
-    left: 250%;
-    bottom: 510px !important;
-    background-color: transparent;
+    text-shadow: 2px 2px 0px #000000;
+
+}.button, .button:hover { 
+    border: none !important;
+}
+.leaderNameM span {
+    background-image: linear-gradient(to right, #00ffff, #00f0f0, #00a0a0, #009090, #00a0a0, #00f0f0, #00ffff, #00f0f0);
+    animation: gradient-border 1.3s linear infinite;
+    background-size: 400% 100%;
+    color: transparent !important;
+    -webkit-background-clip: text;
 }
 
-input:checked+.sliderSml::before {
-    color: white !important;
-    content: 'visibility' !important;
-    font-family: 'Material-Icons';
-    transform: none
+.menuClassPlayerClan {
+    background-image: linear-gradient(to right, #00ffff, #00f0f0, #00a0a0, #009090, #00a0a0, #00f0f0, #00ffff, #00f0f0);
+    animation: gradient-border 1.3s linear infinite;
+    background-size: 400% 100%;
+    color: transparent !important;
+    -webkit-background-clip: text;
 }
 
-#spectButton {
-   visibility: hidden 
-}
-
-/* yes */
-
-#mapInfo::after {
-    content: 'CSS made by FuryKA10#1432';
-    position: fixed;
-    display: block;
-    top: 200px;
-    color: #000896
-}
-
-/*Overrides*/
-:root{
---accent: #ff0000ff;
---accent2: #000000ff;}
+@keyframes gradient-border{0%, 200% {background-position: 0 0;}99.999999999999999% {background-position: -130% 0;}}
