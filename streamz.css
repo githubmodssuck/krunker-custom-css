@@ -359,7 +359,7 @@ input:checked+.sliderSml:before {
 
 .tabANew {
   animation          : sentaku2 infinite 1s;
-  border-bottom-color: white;
+  border-bottom-color: red;
 }
 
 .serverPing.material-icons {
@@ -401,7 +401,7 @@ input:checked+.sliderSml:before {
 }
 
 .setHed[style="margin-top:0;margin-bottom:10px"] {
-  color: white;
+  color: red;
 }
 
 div[style="color:rgba(0,0,0,0.4)"],
@@ -410,7 +410,7 @@ div[style="color:rgba(0,0,0,0.4)"],
 .floatR,
 .menuTabNew,
 .settNameSmall {
-  color: white !important;
+  color: red !important;
 }
 
 span[style="color:rgba(0,0,0,0.5)"] {
@@ -434,18 +434,18 @@ div[style="padding:10px;background-color:rgba(0,0,0,0.2);margin-bottom:0px;margi
 }
 
 input {
-  color: white !important;
+  color: red !important;
 }
 
 div[style="float:right"],
 .mapByTxt,
 .grey,
 div[style="font-size:15px;text-align:right;flex-grow:1"] {
-  color: white !important;
+  color: red !important;
 }
 
 div[style="color:rgba(0,0,0,0.6)"] {
-  color: white;
+  color: red;
 }
 
 .mapListItem:active .mapActionOvrl,
@@ -480,17 +480,17 @@ div[style="color:rgba(0,0,0,0.6)"] {
 }
 
 .settingTab {
-  color     : white;
+  color     : red;
   background: transparent;
 }
 
 .setHed {
   color     : aliceblue;
-  border-top: 3px white solid;
+  border-top: 3px red solid;
 }
 
 span.material-icons.plusOrMinus {
-  color: white;
+  color: red;
 }
 
 .settingsBtn {
@@ -498,8 +498,8 @@ span.material-icons.plusOrMinus {
 }
 
 #instructions {
-  color      : white;
-  text-shadow: 0 0 4px white, 0 0 4px white;
+  color      : red;
+  text-shadow: 0 0 4px red, 0 0 4px red;
   font-size  : 50px;
   animation  : moji infinite 1.5s;
 }
@@ -548,11 +548,11 @@ span.material-icons.plusOrMinus {
 .menuSelectorHeader,
 .serverPCount,
 .serverRegion {
-  color: white !important;
+  color: red !important;
 }
 
 .menuSelectorHeader {
-  border-bottom: 2px white solid;
+  border-bottom: 2px red solid;
 }
 
 /*DO NOT STEEL CODES*/
@@ -637,7 +637,7 @@ span.material-icons.plusOrMinus {
   box-shadow      : none;
   border-radius   : 0px;
   height          : 100%;
-  background-color: white !important;
+  background-color: red !important;
   box-shadow      : 0 0 4px black;
 }
 
@@ -698,7 +698,7 @@ span.material-icons.plusOrMinus {
 }
 
 #leaderContainer {
-  border-top: dotted 5px white;
+  border-top: dotted 5px red;
 }
 
 #leaderDisplay:before {
