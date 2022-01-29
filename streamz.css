@@ -5,8 +5,8 @@
     --menu-bg-color: rgba(255, 255, 255, 1);
     --menu-bg-color-secondary: rgba(230, 230, 230, 1);
     --accent-color: #ff0000;
-    --health-color: #fff;
-    --ammo-color: #fff;
+    --health-color: #ff0000;
+    --ammo-color: #000000;
     --premium-color: #ff0000;
     --verified-color: #ff0000;
     --ingame-bg-color: rgba(15, 15, 15, .2);
