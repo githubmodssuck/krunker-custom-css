@@ -1,0 +1,138 @@
+social_custom.css
+Long ago
+Nov 20, 2020
+
+Sunny Molla uploaded an item
+Style Sheet
+social_custom.css
+:root {
+	--white: white;
+	--accent-color: white;
+	--main-color: #add8e6
+}
+
+@font-face {
+    font-family: gamefont;
+    src: url(./fonts/font2.ttf)
+}
+
+@font-face {
+    font-family: headerfont;
+    src: url(./fonts/header.ttf)
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ring:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 6px;
+  box-sizing: border-box;
+  border: 26px solid pink;
+  border-color: pink transparent pink transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+.lds-ring div {
+	display: none
+}
+
+
+#backgroundImage {
+	background-image: url(https://cdn.discordapp.com/attachments/507593423902081024/765355174733676554/bg.png);
+	border-bottom: 100px solid var(--main-color)
+}
+
+#aContainer {
+	opacity: 0
+}
+
+#navBar,#chatScroller,.leaderNav2,#popupBack {
+	background-color: transparent
+}
+
+#navTitle {
+	color: transparent;
+	margin-top: 10000px
+}
+
+#hubBox {
+	color: transparent;
+	background-color: transparent;
+	margin-top: 10000px
+}
+
+#marketList {
+	height: 116% !important;
+}
+
+#marketHolder {
+	top: 15px !important
+}
+
+#leaderHolder {
+	top: 35px !important
+}
+
+.scrollItem,.scrollItemNew,.profileTabs,.socPost,.feedTab,#settingsPop,.button {
+	background-color: rgba(0,0,0,0.3);
+    border-bottom: 5px solid var(--main-color);
+    border-radius: 0px;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+	box-shadow: 0 0 25px rgba(0,0,0,0) !important;
+}
+
+#rightABox {
+	opacity: 0
+}
+
+#leftABox,#leftYTBox,#rightFollBox {
+	background-color: transparent
+}
+
+.sideBarHeader,.sideBarItem {
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5)
+}
+
+#chatBox,#chatBoxButton {
+	background-color: rgba(0,0,0,0.3);
+    border-bottom: 5px solid var(--main-color);
+    border-radius: 0px;
+}
+
+.chatItemH,a,b {
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#chatBoxInput {
+	background-color: transparent;
+	text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+	margin-left: -10px
+}
+
+#androidDB,#androidDB:hover,#iosDB,#iosDB:hover {
+	display: none
+}
+
+.profilePic {
+	border-radius: 50px
+}
